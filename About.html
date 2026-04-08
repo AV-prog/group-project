@@ -21,8 +21,7 @@
     <link rel="icon" type="image/png" href="images/cyber white.svg">
     <title>Cyber</title>
 </head>
-</html>
-<body>
+<body class="overflow-x-hidden bg-white">
     <nav class="relative w-full max-w-[1300px] h-[88px] max-[960px]:h-[80px] border-b-[1px] border-b-[#B5B5B5] bg-[#FFFFFF] flex items-center justify-between py-[16px] max-[960px]:py-0 px-[24px] md:px-[40px] lg:px-[60px] mx-auto z-[1]">
         <div class="max-[960px]:pl-[25px]">
             <img class="object-scale-down" src="images/cyber black.svg" alt="Cyber Logo">
@@ -86,84 +85,76 @@
             </span>
         </div>
     </nav>
-    <div class="about-hero relative w-full h-[60vh] min-h-[250px] bg-[url('Tech Images.jpg')] flex items-center justify-center">
-        <div class="overlay absolute inset-0 bg-black/50 bg-[url('https://cdn.mos.cms.futurecdn.net/TBYraHW2jopiVsMRak8QgV.jpg')] bg-cover bg-center h-80 bg-blend-multiply">
-            <span class=""></span>
-        </div>
-    </div>
-        <div class="txt1 flex flex-col text-[200px] font-['Anton'] gap-y-1 ml-10 tracking-wide leading-50">
-            <span>WE</span>
-            <span>SELL</span>
-            <span>PHONES*</span>
-            <span class="text-3xl tracking-tight font-light">*if you need a device,visit cyber.</span>
-        </div>
-        <div class="img2 flex ml-10 mt-10">
-            <img class="w-[700px] h-fit" src="images/MacBook-Pro-14-mq.png" alt="">
-            <div class="m5 ml-20 font-['Anton'] text-5xl">
-                <span class="absolute ml-[-55px] mt-[-5px]"><i class="fa-brands fa-apple" style="color: rgb(16, 16, 16);"></i></span>
-                <span>M5 PRO</span>
-                <span class="text-xl flex flex-col gap-2 mt-2 ml-[-38px]">The Apple M5 Pro chip, featured in the 2026 14-inch and 16-inch MacBook Pro, features an 18-core CPU (6 super cores, 12 performance cores) and a 20-core GPU, providing up to 30% faster multithreaded performance than its predecessor. It supports up to 64GB of 9600 MT/s LPDDR5X unified memory, 307GB/s memory bandwidth, and Thunderbolt 5 connectivity.</span>
+    <main class="w-full">
+        <section class="relative w-full min-h-[240px] sm:min-h-[320px] lg:min-h-[420px] bg-[url('images/about-hero.jpg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </section>
 
+        <section class="mx-auto grid w-full max-w-[1300px] gap-[32px] px-[24px] py-[32px] sm:px-[40px] sm:py-[48px] lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:px-[60px] lg:py-[72px]">
+            <div class="flex flex-col font-['Anton'] text-[clamp(3.5rem,13vw,11rem)] leading-[0.88] tracking-wide text-[#111111]">
+                <span>WE</span>
+                <span>SELL</span>
+                <span>PHONES*</span>
+                <span class="mt-4 max-w-[18ch] text-[clamp(1rem,2.4vw,1.75rem)] font-light leading-snug tracking-tight">
+                    *if you need a device, visit cyber.
+                </span>
             </div>
-        </div>
-        <section class="text-center py-12 px-5">
-  
-  <h4 class="text-cyan-500 text-4xl tracking-wider font-['Anton'] tracking-tight">OUR GUARANTEE</h4>
-  <h1 class="text-2xl mb-10 font-bold font-['Anton'] tracking-widest">Engineered to Outperform</h1>
 
-  <div class="flex flex-wrap justify-center gap-5 items-stretch">
+            <div class="flex flex-col items-center gap-[20px] lg:items-start lg:gap-[28px]">
+                <img class="w-full max-w-[640px] h-auto object-contain" src="images/MacBook-Pro-14-mq.png" alt="MacBook Pro">
+                <div class="max-w-[620px] font-['Anton'] text-[#111111]">
+                    <div class="flex items-start gap-[12px] text-[clamp(2rem,5vw,3.5rem)] leading-none">
+                        <i class="fa-brands fa-apple pt-[6px]" style="color: rgb(16, 16, 16);"></i>
+                        <span>M5 PRO</span>
+                    </div>
+                    <p class="mt-4 text-[clamp(1rem,2.2vw,1.25rem)] leading-[1.8] text-[#4a4a4a]">
+                        The Apple M5 Pro chip, featured in the 2026 14-inch and 16-inch MacBook Pro, features an 18-core CPU and a 20-core GPU, providing up to 30% faster multithreaded performance than its predecessor. It supports up to 64GB of LPDDR5X unified memory, 307GB/s memory bandwidth, and Thunderbolt 5 connectivity.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Left Card -->
-    <div class="bg-white p-8 w-[300px] rounded-xl shadow-lg text-center">
-      
-      <div class="text-3xl mt-5">
-        <i class="fa-solid fa-pen" style="color: rgb(16, 16, 16);"></i>
-      </div>
-      <h2 class="text-cyan-500 mt-4 text-xl font-semibold font-['Anton']">Custom to Your Needs</h2>
-      <p class="text-gray-600 text-sm font-['Anton']">
-        Cyber gadgets fit wherever you need them.
-      </p>
+        <section class="mx-auto w-full max-w-[1300px] px-[24px] py-[32px] sm:px-[40px] lg:px-[60px] lg:py-[72px]">
+            <div class="text-center">
+                <h4 class="font-['Anton'] text-[clamp(2rem,5vw,3rem)] tracking-wide text-cyan-500">OUR GUARANTEE</h4>
+                <h1 class="mt-3 font-['Anton'] text-[clamp(1.5rem,3vw,2.25rem)] tracking-widest text-[#111111]">Engineered to Outperform</h1>
+            </div>
 
-      <div class="text-3xl mt-8">
-        <i class="fa-solid fa-clock text-black"></i>
-      </div>
-      <h2 class="text-cyan-500 mt-4 text-xl font-semibold font-['Anton']">Designed to Last</h2>
-      <p class="text-gray-600 text-sm font-['Anton']">
-        Our quality products stand the test of time.
-      </p>
+            <div class="mt-[32px] grid gap-[20px] md:grid-cols-2 lg:grid-cols-3 lg:items-stretch">
+                <div class="rounded-xl bg-white p-6 text-center shadow-lg sm:p-8">
+                    <div class="mt-2 text-3xl">
+                        <i class="fa-solid fa-pen" style="color: rgb(16, 16, 16);"></i>
+                    </div>
+                    <h2 class="mt-4 font-['Anton'] text-xl text-cyan-500">Custom to Your Needs</h2>
+                    <p class="text-sm text-gray-600">Cyber gadgets fit wherever you need them.</p>
 
-    </div>
+                    <div class="mt-8 text-3xl">
+                        <i class="fa-solid fa-clock text-black"></i>
+                    </div>
+                    <h2 class="mt-4 font-['Anton'] text-xl text-cyan-500">Designed to Last</h2>
+                    <p class="text-sm text-gray-600">Our quality products stand the test of time.</p>
+                </div>
 
-    <!-- Center Image -->
-    <div class="text-['Anton']">
-      <img class="w-[300px] h-auto rounded-xl" src="images/mid.jpg" alt="Loading...">
-           
-    </div>
+                <div class="order-first flex items-center justify-center md:order-none">
+                    <img class="w-full max-w-[360px] rounded-xl object-cover shadow-lg" src="images/mid.jpg" alt="Featured product">
+                </div>
 
-    <!-- Right Card -->
-    <div class="bg-white p-8 w-[300px] rounded-xl shadow-lg text-center">
-      
-      <div class="text-3xl mt-5">
-        <i class="fa-solid fa-wrench" style="color: rgb(16, 16, 16);"></i>
-      </div>
-      <h2 class="text-cyan-500 mt-4 text-xl font-semibold font-['Anton']">Experienced Developers.</h2>
-      <p class="text-gray-600 text-sm font-['Anton']">
-        Unmatched quality that's built in Upperlink.
-      </p>
+                <div class="rounded-xl bg-white p-6 text-center shadow-lg sm:p-8">
+                    <div class="mt-2 text-3xl">
+                        <i class="fa-solid fa-wrench" style="color: rgb(16, 16, 16);"></i>
+                    </div>
+                    <h2 class="mt-4 font-['Anton'] text-xl text-cyan-500">Experienced Developers.</h2>
+                    <p class="text-sm text-gray-600">Unmatched quality that's built in Upperlink.</p>
 
-      <div class="text-3xl mt-8">
-        <i class="fa-solid fa-square-check text-black"></i>
-      </div>
-      <h2 class="text-cyan-500 mt-4 text-xl font-semibold font-['Anton']">Quality Gadgets you can trust.</h2>
-      <p class="text-gray-600 text-sm font-['Anton']">
-        Your quality gadgets is our top priority.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
+                    <div class="mt-8 text-3xl">
+                        <i class="fa-solid fa-square-check text-black"></i>
+                    </div>
+                    <h2 class="mt-4 font-['Anton'] text-xl text-cyan-500">Quality Gadgets you can trust.</h2>
+                    <p class="text-sm text-gray-600">Your quality gadgets is our top priority.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="w-full mt-[20px] bg-black px-[24px] py-[56px] md:px-[40px] lg:px-[60px]">
         <div class="mx-auto grid w-full max-w-[1300px] gap-[40px] md:grid-cols-2 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)_minmax(0,1fr)] lg:items-start">
@@ -225,4 +216,66 @@
         </div>
     </footer>
 </body>
+<script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('#navbar-menu');
+    const navLogo = document.querySelector('#navbar__logo');
+    const bar1 = document.querySelector('#bar1');
+    const bar2 = document.querySelector('#bar2');
+    const bar3 = document.querySelector('#bar3');
+    const mobileSearchToggle = document.querySelector('#mobile-search-toggle');
+    const mobileSearchDropdown = document.querySelector('#mobile-search-dropdown');
+
+    const toggleMobileSearch = () => {
+        const isExpanded = mobileSearchToggle.getAttribute('aria-expanded') === 'true';
+        mobileSearchToggle.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+        mobileSearchDropdown.classList.toggle('opacity-0');
+        mobileSearchDropdown.classList.toggle('-translate-y-2');
+        mobileSearchDropdown.classList.toggle('pointer-events-none');
+    };
+
+    mobileSearchToggle.addEventListener('click', toggleMobileSearch);
+
+    const mobileMenu = () => {
+        const isActive = menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+        menu.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+
+        if (isActive) {
+            bar1.classList.add('translate-y-[8px]', 'rotate-45');
+            bar2.classList.add('opacity-0');
+            bar3.classList.add('-translate-y-[8px]', '-rotate-45');
+        } else {
+            bar1.classList.remove('translate-y-[8px]', 'rotate-45');
+            bar2.classList.remove('opacity-0');
+            bar3.classList.remove('-translate-y-[8px]', '-rotate-45');
+        }
+    };
+
+    menu.addEventListener('click', mobileMenu);
+
+    const hideMobileMenu = () => {
+        const menuBars = document.querySelector('.is-active');
+        if (window.innerWidth <= 768 && menuBars) {
+            menu.classList.remove('is-active');
+            menuLinks.classList.remove('active');
+            menu.setAttribute('aria-expanded', 'false');
+            bar1.classList.remove('translate-y-[8px]', 'rotate-45');
+            bar2.classList.remove('opacity-0');
+            bar3.classList.remove('-translate-y-[8px]', '-rotate-45');
+        }
+    };
+
+    const hideMobileSearch = () => {
+        if (window.innerWidth <= 960 && mobileSearchToggle?.getAttribute('aria-expanded') === 'true') {
+            mobileSearchToggle.setAttribute('aria-expanded', 'false');
+            mobileSearchDropdown.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+        }
+    };
+
+    menuLinks.addEventListener('click', hideMobileMenu);
+    menuLinks.addEventListener('click', hideMobileSearch);
+    navLogo?.addEventListener('click', hideMobileMenu);
+    navLogo?.addEventListener('click', hideMobileSearch);
+</script>
 </html>
