@@ -143,3 +143,28 @@ navLogo?.addEventListener('click', hideMobileSearch);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         }
+
+//navbar wishlist heart toggle
+const heartButtons = document.querySelectorAll('.wishlist-heart');
+
+        heartButtons.forEach(heart => {
+            heart.addEventListener('click', function (e) {
+                if (this.tagName === 'A') e.preventDefault();
+
+                this.classList.remove('pop');
+                void this.offsetWidth;
+                this.classList.add('pop');
+                this.classList.toggle('is-liked');
+
+                const icon = this.querySelector('i.fa-heart');
+                if (icon) {
+                    const liked = this.classList.contains('is-liked');
+                    icon.classList.toggle('fa-regular', !liked);
+                    icon.classList.toggle('fa-solid', liked);
+                }
+            });
+
+            heart.addEventListener('animationend', function () {
+                this.classList.remove('pop');
+            });
+        });
